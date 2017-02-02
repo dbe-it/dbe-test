@@ -12,4 +12,42 @@
     <artifactId>spring-wiring</artifactId>
 
 
+    <properties>
+        <version.junit5>5.0.0-M3</version.junit5>
+        <version.spring5>5.0.0.M4</version.spring5>
+        <version.junit.platform.runner>1.0.0-M3</version.junit.platform.runner>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${version.spring5}</version>
+        </dependency>
+
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${version.junit5}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${version.junit5}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${version.junit.platform.runner}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${version.spring5}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
 </project>

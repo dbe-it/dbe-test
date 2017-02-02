@@ -11,5 +11,59 @@
 
     <artifactId>webtester2</artifactId>
 
+    <properties>
+        <version.junit5>5.0.0-M3</version.junit5>
+    </properties>
+
+    <dependencies>
+        <!-- Webtester -->
+        <dependency>
+            <groupId>info.novatec.testit</groupId>
+            <artifactId>webtester-core</artifactId>
+            <version>${version.webtester}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.novatec.testit</groupId>
+            <artifactId>webtester-support-firefox</artifactId>
+            <version>${version.webtester}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.novatec.testit</groupId>
+            <artifactId>webtester-support-junit5</artifactId>
+            <version>${version.webtester}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.novatec.testit</groupId>
+            <artifactId>webtester-support-assertj3</artifactId>
+            <version>${version.webtester}</version>
+        </dependency>
+
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>${version.selenium}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>${version.selenium}</version>
+        </dependency>
+
+        <!-- Testing -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${version.junit5}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${version.junit5}</version>
+        </dependency>
+
+
+    </dependencies>
 
 </project>

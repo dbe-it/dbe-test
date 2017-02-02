@@ -16,7 +16,7 @@ import utils.TestClassExecutor;
 
 public class PlaceholderTest {
 
-    @Disabled
+    @Disabled //test buggy
     @Test
     public void wireSuccess() throws Exception {
         TestClassExecutor.execute(PlaceholderFound.class);
@@ -35,7 +35,7 @@ public class PlaceholderTest {
         }
     }
 
-    @Disabled
+    @Disabled //test buggy
     @Test
     public void wireFail() throws Exception {
         assertThrows(IllegalStateException.class, () -> {
